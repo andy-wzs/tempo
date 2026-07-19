@@ -1,0 +1,379 @@
+/* Tempo static site styles. */
+:root {
+  --bg: #fafaf8;
+  --surface: #ffffff;
+  --surface-alt: #f0f5f1;
+  --text: #2d2a26;
+  --muted: #736d66;
+  --soft: #8f8a83;
+  --border: rgba(45, 42, 38, 0.13);
+  --accent: #2d6a4f;
+  --accent-ink: #ffffff;
+  --blue-soft: #e7f0f7;
+  --rose-soft: #f7ece7;
+  --shadow: 0 22px 70px rgba(45, 42, 38, 0.13);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #151311;
+    --surface: #211e1b;
+    --surface-alt: #1f2a24;
+    --text: #f6efe7;
+    --muted: #bbb2a8;
+    --soft: #9b9590;
+    --border: rgba(246, 239, 231, 0.14);
+    --accent: #88c7a4;
+    --accent-ink: #111713;
+    --blue-soft: #182530;
+    --rose-soft: #2b211d;
+    --shadow: 0 22px 70px rgba(0, 0, 0, 0.26);
+  }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
+}
+
+.page-shell,
+.wrap {
+  width: min(1120px, calc(100% - 40px));
+  margin: 0 auto;
+  padding-bottom: 72px;
+}
+
+.wrap {
+  max-width: 760px;
+}
+
+header.site {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 26px 0 18px;
+  border-bottom: 1px solid var(--border);
+}
+
+.brand {
+  font-family: "Instrument Serif", Georgia, serif;
+  font-size: 31px;
+  line-height: 1;
+  color: var(--text);
+  text-decoration: none;
+}
+
+nav.site {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+nav.site a {
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+nav.site a:hover,
+nav.site a[aria-current="page"] {
+  color: var(--text);
+}
+
+.hero {
+  min-height: min(720px, calc(100vh - 76px));
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(360px, 1.05fr);
+  align-items: center;
+  gap: 48px;
+  padding: 34px 0 58px;
+}
+
+.eyebrow {
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+h1,
+.hero h1 {
+  font-family: "Instrument Serif", Georgia, serif;
+  font-size: clamp(68px, 10vw, 126px);
+  font-weight: 400;
+  line-height: 0.9;
+  margin-bottom: 22px;
+}
+
+.hero-text {
+  color: var(--muted);
+  font-size: 20px;
+  line-height: 1.55;
+  max-width: 540px;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 30px;
+}
+
+.primary-action,
+.secondary-action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 46px;
+  border-radius: 8px;
+  padding: 0 18px;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.primary-action {
+  background: var(--text);
+  color: var(--bg);
+}
+
+.secondary-action {
+  border: 1px solid var(--border);
+  color: var(--text);
+  background: var(--surface);
+}
+
+.hero-media {
+  min-height: 560px;
+  position: relative;
+}
+
+.phone-shot {
+  position: absolute;
+  display: block;
+  width: min(315px, 48vw);
+  height: auto;
+  border-radius: 28px;
+  box-shadow: var(--shadow);
+}
+
+.phone-shot-main {
+  right: 22%;
+  top: 20px;
+  z-index: 2;
+}
+
+.phone-shot-side {
+  right: 0;
+  top: 94px;
+  opacity: 0.92;
+}
+
+.feature-band {
+  padding: 34px 0 22px;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.feature {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 22px;
+  background: var(--surface);
+}
+
+.feature:nth-child(2) {
+  background: var(--blue-soft);
+}
+
+.feature:nth-child(3) {
+  background: var(--rose-soft);
+}
+
+.feature h2 {
+  font-size: 18px;
+  line-height: 1.25;
+  margin-bottom: 8px;
+}
+
+.feature p,
+.showcase p,
+section.legal p,
+section.legal li {
+  color: var(--muted);
+  font-size: 16px;
+}
+
+.showcase {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 260px;
+  align-items: center;
+  gap: 38px;
+  padding: 72px 0 20px;
+}
+
+.showcase h2,
+.wrap h1 {
+  font-family: "Instrument Serif", Georgia, serif;
+  font-size: clamp(40px, 5vw, 60px);
+  font-weight: 400;
+  line-height: 1.02;
+  margin-bottom: 14px;
+}
+
+.showcase-shot {
+  width: 260px;
+  border-radius: 24px;
+  box-shadow: var(--shadow);
+}
+
+.updated {
+  color: var(--soft);
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.intro {
+  color: var(--muted);
+  font-size: 18px;
+  max-width: 680px;
+  margin-bottom: 38px;
+}
+
+section.legal {
+  margin-bottom: 32px;
+}
+
+section.legal h2 {
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 1.25;
+  margin-bottom: 8px;
+}
+
+section.legal p {
+  margin-bottom: 10px;
+}
+
+section.legal ul {
+  padding-left: 20px;
+  margin-top: 8px;
+}
+
+a.inline {
+  color: var(--accent);
+  font-weight: 700;
+}
+
+footer.site {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+  margin-top: 72px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+  color: var(--soft);
+  font-size: 13px;
+}
+
+footer.site a {
+  color: var(--soft);
+}
+
+@media (max-width: 840px) {
+  .hero {
+    grid-template-columns: 1fr;
+    min-height: auto;
+    gap: 30px;
+    padding-top: 42px;
+  }
+
+  .hero-media {
+    min-height: 420px;
+  }
+
+  .phone-shot {
+    width: min(250px, 58vw);
+  }
+
+  .phone-shot-main {
+    left: 6%;
+    right: auto;
+  }
+
+  .phone-shot-side {
+    right: 7%;
+    top: 72px;
+  }
+
+  .feature-grid,
+  .showcase {
+    grid-template-columns: 1fr;
+  }
+
+  .showcase-shot {
+    width: min(260px, 66vw);
+    justify-self: center;
+  }
+}
+
+@media (max-width: 560px) {
+  .page-shell,
+  .wrap {
+    width: min(100% - 28px, 760px);
+  }
+
+  header.site {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  nav.site {
+    width: 100%;
+    justify-content: space-between;
+    gap: 12px;
+  }
+
+  .hero-media {
+    min-height: 330px;
+  }
+
+  .phone-shot {
+    width: min(205px, 62vw);
+    border-radius: 20px;
+  }
+
+  .hero-text {
+    font-size: 18px;
+  }
+
+  .primary-action,
+  .secondary-action {
+    width: 100%;
+  }
+}
