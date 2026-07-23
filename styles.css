@@ -66,8 +66,8 @@ header.site {
 .brand img {
   width: 48px;
   height: 48px;
-  object-fit: cover;
-  border-radius: 11px;
+  object-fit: contain;
+  border-radius: 0;
 }
 
 .brand span {
@@ -215,6 +215,7 @@ nav.site a[aria-current="page"] {
 .premium-feature p {
   margin-top: 8px;
   font-family: "Instrument Serif", Georgia, serif;
+  font-style: italic;
   color: #a9b0bb;
   font-size: 23px;
   font-weight: 400;
