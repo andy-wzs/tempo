@@ -113,7 +113,7 @@ nav.site a[aria-current="page"] {
   margin-right: 12px;
   padding: 0 14px 6px;
   border-radius: 8px;
-  background: linear-gradient(135deg, #24a37a, #0f766e);
+  background: linear-gradient(135deg, #7cc7ff, #3b82f6);
   color: var(--text);
 }
 
