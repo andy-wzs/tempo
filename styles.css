@@ -314,20 +314,8 @@ a.inline {
 }
 
 .contact-intro {
-  display: grid;
-  grid-template-columns: 92px minmax(0, 1fr);
-  gap: 30px;
-  align-items: start;
   max-width: none;
   margin: 58px 0 52px;
-}
-
-.contact-avatar img {
-  display: block;
-  width: 74px;
-  height: 74px;
-  object-fit: cover;
-  border-radius: 16px;
 }
 
 .contact-intro p {
@@ -555,20 +543,12 @@ footer.site a {
     font-size: 16px;
   }
 
-  .definition-list div,
-  .contact-intro {
+  .definition-list div {
     grid-template-columns: 1fr;
   }
 
   .contact-intro {
-    gap: 20px;
     margin-top: 38px;
-  }
-
-  .contact-avatar img {
-    width: 76px;
-    height: 76px;
-    border-radius: 16px;
   }
 
   .contact-intro p,
