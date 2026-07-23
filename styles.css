@@ -214,10 +214,11 @@ nav.site a[aria-current="page"] {
 
 .premium-feature p {
   margin-top: 8px;
+  font-family: "Instrument Serif", Georgia, serif;
   color: #a9b0bb;
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 1.38;
+  font-size: 23px;
+  font-weight: 400;
+  line-height: 1.18;
 }
 
 .legal-page,
@@ -525,7 +526,7 @@ footer.site a {
   }
 
   .premium-feature p {
-    font-size: 16px;
+    font-size: 20px;
   }
 
   .legal-page h1,
