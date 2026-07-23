@@ -6,7 +6,7 @@ Static GitHub Pages site for Tempo.
 
 - `/` - landing page
 - `/privacy/` - privacy policy URL for App Store Connect
-- `/terms/` - terms of service
+- `/terms/` - terms of use
 - `/contact/` - support and legal contact
 
 ## Publish as a GitHub Pages project site
@@ -20,7 +20,7 @@ Static GitHub Pages site for Tempo.
 7. Your URLs will be:
    - Landing page: `https://<github-username>.github.io/tempo/`
    - Privacy policy: `https://<github-username>.github.io/tempo/privacy/`
-   - Terms: `https://<github-username>.github.io/tempo/terms/`
+   - Terms of Use: `https://<github-username>.github.io/tempo/terms/`
 
 Replace `<github-username>` and `tempo` with the actual account and repository names.
 
@@ -28,4 +28,4 @@ Replace `<github-username>` and `tempo` with the actual account and repository n
 
 - Confirm the email and postal address in `privacy/`, `terms/`, and `contact/`.
 - Add the real App Store URL to the landing page when the app is live.
-- Keep the in-app Privacy Policy and Terms screens aligned with these public pages.
+- Keep the in-app Privacy Policy and Terms of Use screens aligned with these public pages.

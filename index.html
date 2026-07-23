@@ -5,15 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Tempo - Habit Tracker for iOS</title>
   <meta name="description" content="Tempo is a calm habit tracker for iOS with routines, focus timers, widgets, streaks, and progress charts." />
+  <link rel="icon" href="assets/app-icon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Instrument+Serif&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <div class="page-shell">
     <header class="site">
-      <a class="brand" href="./">Tempo</a>
+      <a class="brand" href="./" aria-label="Tempo home">
+        <img src="assets/app-icon.png" alt="" />
+        <span>Tempo</span>
+      </a>
       <nav class="site" aria-label="Site navigation">
         <a href="privacy/">Privacy</a>
         <a href="terms/">Terms</a>
@@ -22,53 +26,66 @@
     </header>
 
     <main>
-      <section class="hero" aria-labelledby="hero-title">
-        <div class="hero-copy">
-          <p class="eyebrow">Habit tracker for iOS</p>
-          <h1 id="hero-title">Tempo</h1>
-          <p class="hero-text">Build routines, focus with timers, and see your progress without turning habit tracking into another task.</p>
-          <div class="hero-actions">
-            <a class="primary-action" href="privacy/">Privacy Policy</a>
-            <a class="secondary-action" href="terms/">Terms of Service</a>
-          </div>
-        </div>
-        <div class="hero-media" aria-label="Tempo app screenshots">
-          <img class="phone-shot phone-shot-main" src="assets/tempo-home.png" alt="Tempo habit list and routine tracking screen" />
-          <img class="phone-shot phone-shot-side" src="assets/tempo-focus.png" alt="Tempo focus timer screen" />
-        </div>
+      <section class="home-hero" aria-labelledby="hero-title">
+        <h1 id="hero-title"><span>Change Your Life</span> One Habit at a Time</h1>
+        <p>Track habits, focus sessions, reminders, widgets, and progress in one calm daily dashboard.</p>
       </section>
 
-      <section class="feature-band" aria-label="Features">
-        <div class="feature-grid">
-          <article class="feature">
-            <h2>Daily habits</h2>
-            <p>Track check-offs, counts, timed sessions, reminders, and custom routines from one focused home screen.</p>
-          </article>
-          <article class="feature">
-            <h2>Focus sessions</h2>
-            <p>Start timers for deep work and see active sessions through iOS Live Activities and home-screen widgets.</p>
-          </article>
-          <article class="feature">
-            <h2>Progress views</h2>
-            <p>Review streaks, heatmaps, completion charts, and time-of-day patterns as your habit history grows.</p>
-          </article>
-        </div>
+      <section class="phone-showcase" aria-label="Tempo app showcase">
+        <img src="assets/showcase-01-progress.png" alt="Tempo progress overview showing habit tiles and daily progress" />
+        <img src="assets/showcase-02-widgets.png" alt="Tempo home screen widgets for habit tracking" />
+        <img src="assets/showcase-03-small-wins.png" alt="Tempo statistics and habit insights" />
+        <img src="assets/showcase-05-focus.png" alt="Tempo focus timer for habit sessions" />
+        <img src="assets/showcase-06-shape-routines.png" alt="Tempo routine planning and flexible habit schedules" />
+        <img src="assets/showcase-07-make-it-yours.png" alt="Tempo customisation with themes and habit colours" />
       </section>
 
-      <section class="showcase" aria-labelledby="progress-title">
-        <div>
-          <p class="eyebrow">Statistics</p>
-          <h2 id="progress-title">Small wins stay visible.</h2>
-          <p>Tempo keeps long-term progress readable with weekly, monthly, and yearly views, while keeping the app calm enough to use every day.</p>
+      <section class="plan-section" id="features" aria-labelledby="features-title">
+        <div class="section-heading">
+          <h2 id="features-title">Everything Tempo Includes</h2>
+          <p>Start free, then unlock the tools for bigger habit systems with Premium.</p>
         </div>
-        <img class="showcase-shot" src="assets/tempo-stats.png" alt="Tempo progress and statistics screen" />
+
+        <div class="plan-grid">
+          <article class="plan-panel">
+            <p class="plan-kicker">Free</p>
+            <h3>Included for everyone</h3>
+            <ul class="feature-list">
+              <li>Track up to 4 active habits</li>
+              <li>Daily dashboard with visual progress grids</li>
+              <li>Check-off, count, and timed habits</li>
+              <li>Custom habit names, icons, colours, and schedules</li>
+              <li>Reminder notifications</li>
+              <li>Calendar history and basic progress views</li>
+              <li>Focus timer with free sounds</li>
+              <li>Offline local storage</li>
+              <li>Optional account sync across devices</li>
+            </ul>
+          </article>
+
+          <article class="plan-panel plan-panel-premium">
+            <p class="plan-kicker">Premium</p>
+            <h3>Everything in Free, plus</h3>
+            <ul class="feature-list">
+              <li>Unlimited active habits</li>
+              <li>Pause habits without losing streaks or history</li>
+              <li>Advanced habit statistics</li>
+              <li>Entry breakdowns, trends, and completion timing</li>
+              <li>Home Screen widgets</li>
+              <li>Premium themes and background styles</li>
+              <li>Additional focus sounds for timer sessions</li>
+              <li>Subscription restore through Apple and RevenueCat</li>
+              <li>Support for an independent app developer</li>
+            </ul>
+          </article>
+        </div>
       </section>
     </main>
 
     <footer class="site">
-      <span>© 2026 Tempo</span>
+      <span>&copy; 2026 Tempo</span>
       <a href="privacy/">Privacy Policy</a>
-      <a href="terms/">Terms of Service</a>
+      <a href="terms/">Terms of Use</a>
       <a href="contact/">Contact</a>
     </footer>
   </div>
