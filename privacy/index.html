@@ -27,11 +27,11 @@
 
     <main class="legal-page">
       <h1>Privacy Policy</h1>
-      <p class="updated">Last updated: 23 July 2026</p>
+      <p class="updated">Last updated: 29 July 2026</p>
 
       <section class="legal">
         <h2>1. Information About the Collection of Personal Data and Contact Details of the Person Responsible</h2>
-        <p>1.1 We are pleased that You are using Tempo (the "Application"). This Privacy Policy explains how We handle personal data when You use the Application, related account and sync features, support channels, and this website. Personal data means information that can identify You directly or indirectly.</p>
+        <p>1.1 We are pleased that You are using Tempo (the "Application"). This Privacy Policy explains how We handle personal data when You use the Application, optional iCloud sync, support channels, and this website. Personal data means information that can identify You directly or indirectly.</p>
         <p>1.2 The person responsible for data processing regarding Tempo is Andy Wu, 82 James Carter Road, Mildenhall, IP28 7DE, United Kingdom. Email: <a class="inline" href="mailto:tempoenquire@gmail.com">tempoenquire@gmail.com</a>. The person responsible decides alone or jointly with others on the purposes and means of processing personal data.</p>
       </section>
 
@@ -43,23 +43,24 @@
 
       <section class="legal">
         <h2>3. Data Processing for App Functionality</h2>
-        <p>3.1 Tempo can store habit names, categories, icons, colours, schedules, reminders, completions, count values, session timestamps, timer settings, notes, theme settings, premium status, and related app preferences. Some built-in categories and habit templates are health or fitness-related, such as sleep, hydration, walking, stretching, and workouts. If You use those categories or create similar habits, Your habit content and completions may reveal health or fitness routines. If You use Tempo without signing in, this data stays on Your device unless You later sign in and choose to sync it.</p>
-        <p>3.2 Tempo's current iOS release uses Sign in with Apple for accounts. If You sign in with Apple, We receive the Apple user identifier and any name or email address You choose to share.</p>
-        <p>3.3 If You sign in, Tempo uses Supabase for authentication, database storage, and sync. Synced data may include Your profile, habits, completions, session timestamps, account-backed settings, and premium entitlement information.</p>
-        <p>3.4 The legal bases for this processing are performance of a contract for core app and account features, Your consent where required for optional permissions, and Our legitimate interests in providing a reliable and secure service.</p>
+        <p>3.1 Tempo can store habit names, categories, icons, colours, schedules, reminders, completions, count values, session timestamps, timer settings, notes, theme settings, premium status, and related app preferences. Some built-in categories and habit templates are health or fitness-related, such as sleep, hydration, walking, stretching, and workouts. If You use those categories or create similar habits, Your habit content and completions may reveal health or fitness routines.</p>
+        <p>3.2 Tempo is local-first. Your habit database is stored on Your device. We, as the developers of Tempo, do not operate a server database for Your habit data and do not store or access Your habit names, schedules, completions, timestamps, streaks, notes, or history on Our servers.</p>
+        <p>3.3 If You enable the premium iCloud sync feature, Tempo writes an app data file to Your private iCloud account so Your own devices can back up and sync the same habit data. iCloud is provided by Apple. We do not receive or host the contents of Your iCloud backup.</p>
+        <p>3.4 Tempo does not use a Tempo account system or a third-party authentication/database sync service for habit data.</p>
+        <p>3.5 The legal bases for this processing are performance of a contract for core app and optional sync features, Your consent where required for optional permissions, and Our legitimate interests in providing a reliable and secure service.</p>
       </section>
 
       <section class="legal">
         <h2>4. Data Processing for Contract Processing and Purchases</h2>
         <p>4.1 Purchases and subscriptions are processed by Apple through the App Store. We do not receive Your card number or full payment details.</p>
-        <p>4.2 Tempo uses RevenueCat Inc., 1032 E Brandon Blvd #3003, Brandon, FL 33511, USA, to manage subscription status, restore purchases, and unlock premium features. RevenueCat may receive purchase history, product identifiers, entitlement status, and the app user identifier used to connect Your subscription to Your Tempo account.</p>
+        <p>4.2 Tempo uses RevenueCat Inc., 1032 E Brandon Blvd #3003, Brandon, FL 33511, USA, to manage subscription status, restore purchases, and unlock premium features. RevenueCat may receive purchase history, product identifiers, entitlement status, and an app user identifier used to manage Your subscription and restore purchases. Tempo does not use its own account system for premium access.</p>
         <p>Your data is transmitted to RevenueCat only to the extent necessary for subscription processing, entitlement management, fraud prevention, support, and account restoration. Further information is available in RevenueCat's privacy policy: <a class="inline" href="https://www.revenuecat.com/privacy">https://www.revenuecat.com/privacy</a>.</p>
       </section>
 
       <section class="legal">
         <h2>5. Analytics, Diagnostics, and Crash Reporting</h2>
         <p>5.1 Tempo uses Sentry, 45 Fremont Street, 8th Floor, San Francisco, CA 94105, USA, for crash, error, and diagnostic reports. Reports may include device model, operating system version, app version, stack traces, session health, error context, and technical context needed to diagnose and fix bugs. Tempo configures Sentry not to attach default personal information.</p>
-        <p>5.2 Tempo uses PostHog Inc., 2261 Market Street #4008, San Francisco, CA 94114, USA, to understand app launches, screen views, feature usage, paywall events, subscription start events, timer events, habit category selections, and similar product interactions. Analytics events may include app version, build, operating system, device model, screen size, locale, time zone, app-scoped analytics identifiers, and the signed-in account identifier after You sign in. We avoid sending habit names, notes, or other free-text habit content as analytics event properties.</p>
+        <p>5.2 Tempo uses PostHog Inc., 2261 Market Street #4008, San Francisco, CA 94114, USA, to understand app launches, screen views, feature usage, paywall events, subscription start events, timer events, habit category selections, and similar product interactions. Analytics events may include app version, build, operating system, device model, screen size, locale, time zone, and app-scoped analytics identifiers. We avoid sending habit names, notes, completion history, or other free-text habit content as analytics event properties.</p>
         <p>5.3 The legal bases are consent where required and Our legitimate interests in security, reliability, diagnostics, and improving the Service.</p>
       </section>
 
@@ -71,7 +72,7 @@
 
       <section class="legal">
         <h2>7. Service Providers and International Transfers</h2>
-        <p>We use providers that help operate Tempo: Apple for App Store distribution, Sign in with Apple, in-app purchases, and notifications; Supabase for authentication, database, and sync; RevenueCat Inc., 1032 E Brandon Blvd #3003, Brandon, FL 33511, USA, for subscription management; PostHog Inc., 2261 Market Street #4008, San Francisco, CA 94114, USA, for product analytics; and Sentry, 45 Fremont Street, 8th Floor, San Francisco, CA 94105, USA, for crash, error, and diagnostic reporting.</p>
+        <p>We use providers that help operate Tempo: Apple for App Store distribution, in-app purchases, notifications, and optional private iCloud storage; RevenueCat Inc., 1032 E Brandon Blvd #3003, Brandon, FL 33511, USA, for subscription management; PostHog Inc., 2261 Market Street #4008, San Francisco, CA 94114, USA, for product analytics; and Sentry, 45 Fremont Street, 8th Floor, San Francisco, CA 94105, USA, for crash, error, and diagnostic reporting.</p>
         <p>These providers may process data in the United Kingdom, European Economic Area, United States, or other countries where they or their subprocessors operate. Where required, transfers rely on safeguards such as adequacy decisions, standard contractual clauses, or equivalent protections.</p>
       </section>
 
@@ -82,8 +83,8 @@
 
       <section class="legal">
         <h2>9. Retention and Deletion</h2>
-        <p>Local app data remains on Your device until You delete it, sign out, reset app data, or uninstall the Application. Signing out removes local account data from that device, but it does not cancel subscriptions or automatically delete synced server records.</p>
-        <p>Synced account data is kept while Your account is active. To delete Your account and associated server data, open Settings &gt; Account &gt; Delete account, or email <a class="inline" href="mailto:tempoenquire@gmail.com">tempoenquire@gmail.com</a>. We may keep limited records where required for security, legal, tax, accounting, dispute, or fraud-prevention purposes.</p>
+        <p>Local app data remains on Your device until You erase it in Tempo, uninstall the Application, or remove the device's app data. If premium iCloud sync is enabled, Tempo also stores the synced habit backup in Your private iCloud account until You erase it through Tempo or manage it through Apple/iCloud controls where available.</p>
+        <p>Because We do not operate a Tempo account database for habit data, We cannot directly view, export, or delete Your locally stored or private iCloud-stored habit content from Our systems. We may keep limited contact, purchase-support, analytics, diagnostic, legal, tax, accounting, dispute, or fraud-prevention records where required or permitted by law.</p>
       </section>
 
       <section class="legal">
