@@ -13,7 +13,7 @@
   --accent-3: #78c69a;
   --gold: #f2be22;
   --shadow: 0 28px 80px rgba(0, 0, 0, 0.42);
-  --content-width: min(75.6vw, 2520px);
+  --content-width: clamp(320px, 86vw, 2520px);
 }
 
 * {
@@ -320,9 +320,9 @@ a.inline {
 }
 
 .contact-intro p {
-  max-width: 1320px;
+  max-width: min(100%, 1680px);
   color: #d8d5cf;
-  font-size: 22px;
+  font-size: clamp(18px, 1.08vw, 24px);
   font-weight: 700;
   line-height: 1.45;
   margin-bottom: 22px;
@@ -341,7 +341,7 @@ a.inline {
 address {
   color: var(--muted);
   font-style: normal;
-  font-size: 21px;
+  font-size: clamp(18px, 1vw, 22px);
   font-weight: 700;
   line-height: 1.45;
 }
