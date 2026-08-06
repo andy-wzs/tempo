@@ -301,6 +301,8 @@
     }
 
     .wl-feature {
+      /* Each card sets its own --accent below; these are the fallbacks. */
+      --accent: 56, 189, 248;
       text-align: center;
       padding: 28px 20px;
       border-radius: 16px;
@@ -309,9 +311,18 @@
       transition: border-color 0.3s ease, background 0.3s ease;
     }
 
+    .wl-feature:nth-child(1) { --accent: 56, 189, 248; }   /* sky */
+    .wl-feature:nth-child(2) { --accent: 167, 139, 250; }  /* violet */
+    .wl-feature:nth-child(3) { --accent: 244, 114, 182; }  /* pink */
+    .wl-feature:nth-child(4) { --accent: 52, 211, 153; }   /* emerald */
+    .wl-feature:nth-child(5) { --accent: 251, 191, 36; }   /* amber */
+    .wl-feature:nth-child(6) { --accent: 129, 140, 248; }  /* indigo */
+
     .wl-feature:hover {
-      border-color: rgba(56, 189, 248, 0.15);
-      background: rgba(255, 255, 255, 0.04);
+      /* Border and tint follow the card's own icon colour. Size never changes. */
+      transform: none;
+      border-color: rgba(var(--accent), 0.45);
+      background: rgba(var(--accent), 0.06);
     }
 
     .wl-feature-icon {
@@ -321,9 +332,14 @@
       width: 48px;
       height: 48px;
       border-radius: 12px;
-      background: rgba(56, 189, 248, 0.08);
-      color: #7dd3fc;
+      background: rgba(var(--accent), 0.1);
+      color: rgb(var(--accent));
       margin-bottom: 16px;
+      transition: background 0.3s ease;
+    }
+
+    .wl-feature:hover .wl-feature-icon {
+      background: rgba(var(--accent), 0.18);
     }
 
     .wl-feature-icon svg {
@@ -347,31 +363,6 @@
       font-size: 14px;
       font-weight: 600;
       line-height: 1.45;
-    }
-
-    /* CTA repeat */
-    .waitlist-cta-repeat {
-      text-align: center;
-      padding: 60px 0 30px;
-    }
-
-    .waitlist-cta-repeat h2 {
-      font-size: 36px;
-      font-weight: 800;
-      line-height: 1.12;
-      margin-bottom: 12px;
-    }
-
-    .waitlist-cta-repeat p {
-      color: #8e8780;
-      font-size: 17px;
-      font-weight: 600;
-      margin-bottom: 32px;
-    }
-
-    .waitlist-cta-repeat .waitlist-form-wrap {
-      margin-top: 0;
-      animation: none;
     }
 
     /* Success state */
@@ -493,18 +484,6 @@
         padding: 40px 0 10px;
       }
 
-      .waitlist-cta-repeat h2 {
-        font-size: 26px;
-      }
-
-      .waitlist-cta-repeat .waitlist-form {
-        flex-direction: column;
-      }
-
-      .waitlist-cta-repeat .waitlist-form button {
-        width: 100%;
-        padding: 16px;
-      }
     }
   </style>
 </head>
@@ -536,7 +515,7 @@
           <span class="gradient-text">Build Better Habits</span>
         </h1>
 
-        <p>Join the waitlist for Tempo — a calm, beautiful habit tracker for iOS. Track habits, focus sessions, streaks, and more. We'll notify you the moment it's ready.</p>
+        <p>Join the waitlist for Tempo. Track habits, focus sessions, streaks, and more. We'll notify you the moment it's ready.</p>
 
         <div class="waitlist-form-wrap" id="hero-form-wrap">
           <form class="waitlist-form" id="waitlist-form-hero" autocomplete="on">
@@ -560,7 +539,7 @@
             <span class="avatar">K</span>
             <span class="avatar">J</span>
           </div>
-          <span><strong>200+</strong> people already on the waitlist</span>
+          <span><strong>50+</strong> people already on the waitlist</span>
         </div>
 
         <div class="waitlist-success" id="hero-success">
@@ -622,25 +601,26 @@
           <h3>Make It Yours</h3>
           <p>Premium themes, custom colours, and backgrounds that feel personal.</p>
         </div>
-      </section>
-
-      <!-- Repeat CTA -->
-      <section class="waitlist-cta-repeat" aria-label="Join the waitlist">
-        <h2>Don't miss out</h2>
-        <p>Early supporters get first access and exclusive perks.</p>
-        <div class="waitlist-form-wrap">
-          <form class="waitlist-form" id="waitlist-form-bottom" autocomplete="on">
-            <input
-              type="email"
-              id="waitlist-email-bottom"
-              name="email"
-              placeholder="Enter your email"
-              required
-              autocomplete="email"
-            />
-            <button type="submit" id="waitlist-submit-bottom">Join Waitlist</button>
-          </form>
-          <p class="form-message" id="form-message-bottom" aria-live="polite"></p>
+        <div class="wl-feature">
+          <div class="wl-feature-icon">
+            <svg viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="10" rx="2" /><path d="M8 11V8a4 4 0 0 1 8 0v3" /><path d="M12 15v2" /></svg>
+          </div>
+          <h3>Private iCloud Sync</h3>
+          <p>Your habits stay local by default, then sync across your devices through your own private iCloud.</p>
+        </div>
+        <div class="wl-feature">
+          <div class="wl-feature-icon">
+            <svg viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="12" rx="2" /><path d="M8 21h8M12 17v4M8 9h2M12 9h2M16 9h2M8 13h2M12 13h2M16 13h2" /></svg>
+          </div>
+          <h3>Home Screen Widgets</h3>
+          <p>Check your progress straight from the iOS home screen without opening the app.</p>
+        </div>
+        <div class="wl-feature">
+          <div class="wl-feature-icon">
+            <svg viewBox="0 0 24 24"><path d="M4 19V5M4 19h16" /><path d="m7 15 4-4 3 3 5-7" /></svg>
+          </div>
+          <h3>Advanced Statistics</h3>
+          <p>Trends, completion timing, and habit-by-habit insights that show what is actually working.</p>
         </div>
       </section>
     </main>
@@ -667,10 +647,7 @@
       const form = e.target;
       const emailInput = form.querySelector('input[type="email"]');
       const button = form.querySelector('button');
-      const isHero = form.id === 'waitlist-form-hero';
-      const messageEl = document.getElementById(
-        isHero ? 'form-message-hero' : 'form-message-bottom'
-      );
+      const messageEl = document.getElementById('form-message-hero');
 
       const email = emailInput.value.trim();
       if (!email) return;
@@ -693,18 +670,7 @@
         if (res.ok) {
           messageEl.textContent = '';
           form.style.display = 'none';
-
-          if (isHero) {
-            const successEl = document.getElementById('hero-success');
-            successEl.classList.add('active');
-          } else {
-            messageEl.textContent = "You're on the list! Check your inbox 🎉";
-            messageEl.className = 'form-message success';
-            form.style.display = '';
-            emailInput.value = '';
-            button.disabled = false;
-            button.textContent = 'Join Waitlist';
-          }
+          document.getElementById('hero-success').classList.add('active');
         } else {
           throw new Error(data.error || 'Something went wrong');
         }
@@ -716,9 +682,7 @@
       }
     }
 
-    // Attach to both forms
     document.getElementById('waitlist-form-hero').addEventListener('submit', handleWaitlistSubmit);
-    document.getElementById('waitlist-form-bottom').addEventListener('submit', handleWaitlistSubmit);
   </script>
 </body>
 </html>

@@ -110,11 +110,10 @@ nav.site a[aria-current="page"] {
 
 .home-hero h1 span {
   display: inline-block;
-  margin-right: 12px;
-  padding: 0 14px 6px;
-  border-radius: 8px;
-  background: linear-gradient(135deg, #38bdf8, #2563eb);
-  color: var(--text);
+  background: linear-gradient(135deg, #38bdf8, #818cf8, #a78bfa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .home-hero p {
@@ -471,9 +470,7 @@ footer.site a {
   }
 
   .home-hero h1 span {
-    margin-right: 0;
-    margin-bottom: 8px;
-    padding: 0 10px 5px;
+    margin-bottom: 4px;
   }
 
   .home-hero p,
