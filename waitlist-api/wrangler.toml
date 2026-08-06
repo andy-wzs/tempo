@@ -1,0 +1,11 @@
+name = "tempo-waitlist-api"
+main = "src/index.js"
+compatibility_date = "2024-12-01"
+
+[vars]
+ALLOWED_ORIGIN = "https://tempohabit.app"
+FROM_EMAIL = "andy@tempohabit.app"
+
+# RESEND_API_KEY is stored as a secret — set it with:
+#   npx wrangler secret put RESEND_API_KEY
+# Never put the actual key in this file.
