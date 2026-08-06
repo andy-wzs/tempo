@@ -5,6 +5,9 @@ compatibility_date = "2024-12-01"
 [vars]
 ALLOWED_ORIGIN = "https://tempohabit.app"
 FROM_EMAIL = "andy@tempohabit.app"
+# Resend Audience that stores waitlist signups, so the launch broadcast
+# has a list to send to. Create it under Audience in the Resend dashboard.
+RESEND_AUDIENCE_ID = "a6c1e89b-453a-432f-a6bb-0c913fefb0bc"
 
 # RESEND_API_KEY is stored as a secret — set it with:
 #   npx wrangler secret put RESEND_API_KEY
