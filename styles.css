@@ -109,7 +109,7 @@ nav.site a[aria-current="page"] {
 }
 
 .home-hero h1 span {
-  display: inline-block;
+  display: block;
   background: linear-gradient(135deg, #38bdf8, #818cf8, #a78bfa);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
