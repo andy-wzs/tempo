@@ -102,13 +102,13 @@ function welcomeEmailHtml() {
     <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; max-width: 520px; margin: 0 auto; padding: 40px 24px;">
       <h1 style="font-size: 28px; font-weight: 800; color: #1a1a1a; margin-bottom: 16px;">You're on the Tempo Waitlist!</h1>
       <p style="font-size: 16px; color: #555; line-height: 1.6; margin-bottom: 20px;">
-        Thanks for signing up! You'll be among the first to experience Tempo — a calm, beautiful habit tracker designed to help you build better habits, one day at a time.
+        Thanks for signing up! You'll be among the first to experience Tempo — a calm, beautiful habit tracker designed to help you build better habits.
       </p>
       <p style="font-size: 16px; color: #555; line-height: 1.6; margin-bottom: 20px;">
         We're putting the finishing touches on Tempo. When it's ready, you'll get an exclusive early access link straight to your inbox.
       </p>
       <p style="font-size: 16px; color: #555; line-height: 1.6; margin-bottom: 32px;">
-        In the meantime, follow us on <a href="https://www.instagram.com/" style="color: #2563eb; text-decoration: none; font-weight: 600;">Instagram</a> and <a href="https://www.tiktok.com/" style="color: #2563eb; text-decoration: none; font-weight: 600;">TikTok</a> for sneak peeks and updates.
+        In the meantime, follow us on <a href="https://www.instagram.com/tempohabit.app/" style="color: #2563eb; text-decoration: none; font-weight: 600;">Instagram</a> and <a href="https://www.tiktok.com/@tempohabit.app" style="color: #2563eb; text-decoration: none; font-weight: 600;">TikTok</a> for sneak peeks and updates.
       </p>
       <p style="font-size: 14px; color: #999; line-height: 1.5;">
         — Andy, creator of Tempo
