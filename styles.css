@@ -116,6 +116,13 @@ nav.site a[aria-current="page"] {
   background-clip: text;
 }
 
+/* Second line stays plain text — only the first line takes the gradient. */
+.home-hero h1 .hero-line-2 {
+  background: none;
+  -webkit-text-fill-color: var(--text);
+  color: var(--text);
+}
+
 .home-hero p {
   max-width: 980px;
   margin: 28px auto 0;
